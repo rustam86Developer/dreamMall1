@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+        <div class="nav-icon-align">
+            <div class="d-flex align-items-center">
+                <button type="button" id="sidebarCollapse" class="btn-menu mr-1 p-0">
+                    <div class="navbar-toggler-icon">
+                        <span class="toggler-icon-menu toggler-icon-width-first"></span>
+                        <span class="toggler-icon-menu toggler-icon-width-second"></span>
+                        <span class="toggler-icon-menu toggler-icon-width-third"></span>
+                    </div>
+                </button>
+                <div class="d-flex">
+                    <a>  
+                        <h1 class="top-menu-tx top-menu-tx-active mr-3 ">RECONNECT</h1>
+                    </a>
+                </div>
+            </div>
+            <ul class="nav navbar-nav ml-auto dashboard-nav-sm">
+                <li class="nav-item" id="adminHelpBtn">
+                    <a href="/help" title="Help"> <i id="helpIcon"
+                            class="fas fa-question-circle mr-3 mt-2 top-nav-icons"></i> </a>
+                </li>
+                <!-- <li class="nav-item" id="adminSettingBtn">
+                    <a href="/preference" title="setting"> 
+                        <i id="setting_icon" class="fas fa-cog mr-3 mt-2 top-nav-icons"></i> </a>
+                </li> -->
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button type="button" title="Admin" class="btn dropdown-toggle profile-btn"
+                            data-toggle="dropdown">
+                            <img class=" profile-btn-image" src="assets/images/profile-img.png" alt="">
+                        </button>
+                        <div class="dropdown-menu drop-box">
+                            <a class="dropdown-item" id="accessLogBtn" href="/accesslogs">Access log</a>
+                            <a class="dropdown-item" id="changePasswordBtn" href="/changepassword">Change Password</a>
+                            <a class="dropdown-item" id="logout">Logout</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

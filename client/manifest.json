@@ -1,0 +1,42 @@
+{
+    "name": "Stikkum",
+    "short_name": "Stikkum",
+    "theme_color": "#ff4213",
+    "background_color": "#fff",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/login",
+    "icons": [
+        {
+            "src": "assets/images/pwa/32x32-logo.png",
+            "type": "image/png",
+            "sizes": "32x32"
+          },
+          {
+            "src": "assets/images/pwa/72x72-logo.png",
+            "type": "image/png",
+            "sizes": "72x72"
+          },
+          {
+            "src": "assets/images/pwa/128x128-logo.png",
+            "type": "image/png",
+            "sizes": "128x128"
+          },
+          {
+            "src": "assets/images/pwa/192x192-logo.png",
+            "type": "image/png",
+            "sizes": "192x192"
+          },
+          {
+            "src": "assets/images/pwa/144x144-logo.png",
+            "type": "image/png",
+            "sizes": "144x144"
+          },
+          {
+            "src": "assets/images/pwa/512x512-logo.png",
+            "type": "image/png",
+            "sizes": "512x512"
+          }
+      ]
+  }
