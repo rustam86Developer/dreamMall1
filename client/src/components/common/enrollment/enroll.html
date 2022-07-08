@@ -1,0 +1,161 @@
+<!--  //////// Page Content //////// -->
+<!--header Section-->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light header-padding header-width-full">
+        <a class="navbar-brand p-0" href="https://www.stikkum.io/">
+            <img class="logo-width" src="assets/images/logo.png" alt="logo">
+        </a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item" id="loginBtn">
+                <a href="/login">LOGIN</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!--header Section End-->
+
+<section>
+    <div class="container-fluid enroll-main-bg p-0">
+        <!--Background image Section-->
+        <div class="col-12 col-sm-12 col-md-5 col-lg-6 p-0 signup-bg">
+            <div class="login-img"></div>
+            <img src="./assets/images/price-img-logo.png" alt="Stikkum" class="signup-img-logo">
+        </div>
+        <!--Background image Section End-->
+        <div class="container content-wrapper">
+            <div class="enroll-content-bg enroll-content-padding col-sm-7" style="margin-left: 20%;">
+                <form id="enrollmentForm">
+                    <div class="row setup-content mt-3" id="step-1">
+                        <div class="col-12 mt-2">
+                            <p class="content-text">Dream Mall platform
+                            </p>
+                        </div>
+                        <!--Personal information Form-->
+                        <div class="col-12 col-sm-12">
+                            <h1 class="enroll-page-heading">Personal information</h1>
+                        </div>
+                        <div class="col-12 col-sm-12">
+                            <div class="form-group">
+                                <label class="stikkum-label" for="personalName">Name *</label>
+                                <input type="text" class="stikkum-form-control border-bottom-grey text-capitalize"
+                                    placeholder="Enter Your Name" id="personalName" name="personalName">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12">
+                            <div class="form-group">
+                                <label class="stikkum-label" for="mobileNumber">Mobile Number *</label>
+                                <input type="text" class="stikkum-form-control border-bottom-grey phone"
+                                    placeholder="Enter Mobile Number" name="mobileNumber"
+                                    id="mobileNumber">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12">
+                            <div class="form-group">
+                                <label class="stikkum-label" for="personalEmail">Email *</label>
+                                <input type="email" class="stikkum-form-control border-bottom-grey"
+                                    placeholder="Enter Email" name="personalEmail" id="personalEmail">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12">
+                            <div class="form-group">
+                                <label class="stikkum-label" for="address">Address *</label>
+                                <input type="text" class="stikkum-form-control border-bottom-grey"
+                                    placeholder="Enter Address" name="address" id="address">
+                            </div>
+                        </div>
+                        <div class="col-12 my-4 d-flex justify-content-end">
+                            <div class="width-100">
+                                <button type="submit" class="btn-orange button-shadow" id="enrollBtn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="row setup-content mt-3" id="step-4" style="display: none;">
+        <div class="col-12">
+            <h1 class="enroll-copmplete-text mb-0">Enrollment Completed!</h1>
+        </div>
+        <div class="col-12">
+            <h1 class="enroll-page-heading">Thank you for your enrollment in Stikkum. </h1>
+        </div>
+        <div class="col-12 mt-3">
+            <h1 class="content-text">We are very much looking forward to having you as a valued client, and
+                look forward to supporting
+                you, your customers and the relationships you will grow together long into the future!!!
+            </h1>
+        </div>
+        <div class="col-12 mt-3">
+            <h1 class="content-text">Disclaimer: For compliance and security purposes, each new end user
+                application will be reviewed
+                for final approval. Upon approval, you will receive a welcome email with a link to create
+                your account and upload your clients to be monitored and retained!!</h1>
+        </div>
+        <div class="col-12 mt-3">
+            <h1 class="content-text">Implementation Preparation: In preparation for implementation, please see
+                the attached template
+                to use for your client database formatting. This template will be used for data upload.
+            </h1>
+        </div>
+        <div class="col-12 mt-3">
+            <h1 class="content-text">Click here to
+                <a href="download/template.xlsx" class="downloadSpreadsheet"><b class="color-blue">Spreadsheet Template
+                    </b> to use for database
+                    upload.
+            </h1></a>
+        </div>
+        <div class="col-12 my-4 d-flex justify-content-center">
+            <a href="/login" type="button" id="startUsingStikkum" class="btn-orange width-250 button-shadow">START
+                USING STIKKUM</a>
+                <a href="javascript:void(0)" id="iframeClose" type="button" class="btn-orange start_using_btn_width button_shadow">CLOSE</a>
+        </div>
+    </div>
+    <!--wizard ste4 End-->
+</section>
+<!--footer-->
+<footer>
+    <div class="footer-border">
+        <div class="footer-hg footer-padding">
+            <h1 class="sidenav-footer-text mb-0">
+                <b>STIKKUM</b> © 2020. <span class="footer-copyrighy-date"></span> All Rights Reserved.</h1>
+            <div>
+                <a href="https://www.linkedin.com/company/stikkum/" target="_blank" class="mr-2">
+                    <img src="assets/images/linkdin3.png" style="height:20px">
+                </a>
+                <a href="https://twitter.com/stikkum" target="_blank" class="mr-2">
+                    <img src="assets/images/twitter3.png" style="height:20px">
+                </a>
+                <a href="https://www.facebook.com/stikkum" target="_blank">
+                    <img src="assets/images/facebook3.png" style="height:20px">
+                </a>
+            </div>
+        </div>
+</footer>
+<!--footer End-->
+<!--  //////// Page Content End//////// -->
+
+<!--  //////// Service Agreement Modal //////// -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content modal-shadow">
+            <!-- Modal Header -->
+            <div class="modal-header modal-header-cust">
+                <h4 class="modal-title modal-header-heading">Service Agreement</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body modal-body-height">
+                <p class="content-text" id="serviceAgreement">
+                </p>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <a class="cancel-button" href="#" data-dismiss="modal">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  //////// Service Agreement Modal  End//////// -->

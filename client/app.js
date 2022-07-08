@@ -2,7 +2,7 @@ $(document).ready(function() {
     try{
     Sammy('body', async function(App) {
 
-        // await $.getScript('src/components/global.js')
+        await $.getScript('src/components/global.js')
         await $.getScript('config.js')
         await $.getScript('src/components/helper/constant.js')
 
@@ -17,6 +17,9 @@ $(document).ready(function() {
         $('#appLoader').hide();
         App.run();
     });
+    localStorage.setItem('jwtToken','dgsgrdsgsd');
+    localStorage.setItem('clientId', '444');
+
 
     $.getScriptCached = function(url, callback) {
         return $.ajax({

@@ -7,7 +7,9 @@
 $.BASE_URL = window.location.origin;
 var HOST = window.location.host;
 
-$.COMMON_BASE_URL = $.CORE_BASE_URL + 'common/'
+// $.CORE_BASE_URL = $.BASE_URL + "/core/";
+
+// $.COMMON_BASE_URL = $.CORE_BASE_URL + 'common/'
 
 $.COMMON_PATH = 'src/components/common/';
 

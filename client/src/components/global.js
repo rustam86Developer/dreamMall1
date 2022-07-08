@@ -2,6 +2,8 @@ $(document).on('click', "#logout", function(e) {
     /**
      * Clear the storage
      */
+     console.log("44444444444444444444444");
+
     let loginUrl = localStorage.getItem('loginUrl');
     localStorage.clear();
     /**
@@ -16,6 +18,7 @@ $(document).on('click', "#logout", function(e) {
 
 $(document).on('click', "#sidebarCollapse", function(e) {
     // $('#content').removeClass('main-content-width');
+    console.log("44444444444444444444444");
     $('#sidebar').toggleClass('active');
     $("#content").toggleClass("main-content-width");
     $("#addClientBtnIcon").toggleClass("table-delete-fixed-header-100");
