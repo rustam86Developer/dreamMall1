@@ -9,9 +9,17 @@ Connect.notFound = function() {
     this.runRoute('get', "/error");
 }
 
-Connect.get('/', function() {
-    this.partial(
-        $.CONNECT_PATH + 'dash/list.html');
+Connect.get('/', async function() {
+    // this.partial(
+    //     $.CONNECT_PATH + 'dash/list.html');
+    // this.partial(
+    //     $.CONNECT_PATH + 'dash/list.js');
+        await renderUI(
+            this,
+            "layout/side-navigation/client-side-nav.html",
+            "layout/top-navigation/client-top-nav.html",
+            $.CONNECT_PATH + 'dash/list.html', [$.CONNECT_PATH + 'dash/list.js']
+        );
 });
 
 Connect.get('/gotoplay', async function() {

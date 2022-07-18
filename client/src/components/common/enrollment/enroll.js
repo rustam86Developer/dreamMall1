@@ -9,13 +9,13 @@ $(document).ready(function () {
             ui: {
                 "#personalName": {
                     bind: function (data, value) {
-                        userPrimaryObj.firstName = value;
+                        userPrimaryObj.name = value;
                     }
                 },
                 "#mobileNumber":
                 {
                     bind: function (data, value) {
-                        userPrimaryObj.mobileNumber = value;
+                        userPrimaryObj.mobile = value;
                     }
                 },
                 "#personalEmail":
@@ -30,6 +30,12 @@ $(document).ready(function () {
                         userPrimaryObj.address = value;
                     }
                 },
+                "#password":
+                {
+                    bind: function (data, value) {
+                        userPrimaryObj.password = value;
+                    }
+                },
             }
         });
 
@@ -39,6 +45,7 @@ $(document).ready(function () {
             personalEmail: { required: true, email: true },
             mobileNumber: { required: true, number: true, minlength: 10, maxlength: 10 },
             address: { required: true },
+            password: { required: true },
         },
         // messages: {
         //     personalName: 'Please fill mandatory fields',
@@ -57,12 +64,20 @@ $(document).ready(function () {
             let sdfd = $.ajax({
                 url: 'http://localhost:8000/enroll-ment',
                 data: userPrimaryObj,
+                headers: {
+                    'content-type': 'application/json',
+                  },
                 type: 'GET',
                 success: function (data) {
                     console.log("lof", data);
+                    $('#enrollmentForm').trigger("reset");
+                    toastr.remove();
+                    $.toast.success('Registration Has Been Successfully');
                 },
                 error: function (error) {
                     console.log("errror", error);
+                    toastr.remove();
+                    $.toast.error('Please try after half an hour');
                 }
             });
             console.log("klllllllllllllllllll", sdfd);
