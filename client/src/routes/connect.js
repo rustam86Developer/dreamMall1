@@ -36,3 +36,9 @@ Connect.get('/enrollment', async function() {
     // await $.getScript($.COMMON_PATH + "enrollment/enroll-conditions.js?v=" + $.VERSION);
     await $.getScript($.COMMON_PATH + "enrollment/enroll.js?v=" + $.VERSION);
 });
+
+Connect.get('/login', async function() {
+    await this.partial($.COMMON_PATH + "login/login.html?v=" + $.VERSION)
+    // await $.getScript($.COMMON_PATH + "loginment/login-conditions.js?v=" + $.VERSION);
+    await $.getScript($.COMMON_PATH + "login/login.js?v=" + $.VERSION);
+});

@@ -15,3 +15,18 @@ exports.getData = function(data) {
 exports.placeBit = function(data) {
     return model.bitPlaced.create({...data })
 }
+
+exports.getEmailPass = async function(data) {
+    console.log("222222222",`SELECT * FROM Enrolls where (email = '${data.mobileNumberEmail}' or mobile = '${data.mobileNumberEmail}') and password = '${data.password}'`, { type: sequelize.QueryTypes.SELECT });
+
+    const users = await model.sequelize.query(`SELECT * FROM Enrolls where (email = '${data.mobileNumberEmail}' or mobile = '${data.mobileNumberEmail}') and password = '${data.password}'`,
+    { type: sequelize.QueryTypes.SELECT });
+
+    console.log("5555555",users);
+    return users
+}
+
+// await model.sequelize.query(
+//     `UPDATE BorrowerDatabases SET isPartOfSequence =true WHERE '${condition}
+// `, { transaction: transaction, type: sequelize.QueryTypes.UPDATE }
+// )

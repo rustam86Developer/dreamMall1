@@ -1,16 +1,8 @@
 // const config = require('./config/config.js');
-const Razorpay = require('razorpay');
 const commonController = require('./controller/common.js');
 var express = require('express');  
 var app = express();  
-const razorpayInstance = new Razorpay({
-  
-    // Replace with your key_id
-    key_id: 'rzp_live_G7oakVdvkioW1l',
-  
-    // Replace with your key_secret
-    key_secret: 'dRidXEuHG661hsZwtVlzl2lJ'
-});
+
 app.use((request, response, next) => {
     if (request.get('x-amz-sns-message-type')) {
         request.headers['Content-Type'] = 'application/json';
@@ -34,24 +26,7 @@ app.get('/', function (req, res) {
 });  
 app.get('/enroll-ment', commonController.getData);  
 app.get('/place-bit', commonController.placeBit);  
-
-
-app.post('/createOrder', (req, res)=>{ 
-    console.log("333333333333create");
-    const {amount,currency,receipt, notes}  = req.body;      
-    razorpayInstance.orders.create({amount, currency, receipt, notes}, 
-        (err, order)=>{
-            if(!err){
-                console.log("22222222222222222",order);
-                res.json(order)
-            } else{
-                console.log("22222222222222222",order);
-                res.send(err);
-            }
-           
-        }
-    )
-});
+app.get('/login', commonController.login);  
 
 var server = app.listen(8000, function () {  
   var host = server.address().address;  

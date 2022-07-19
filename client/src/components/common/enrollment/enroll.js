@@ -45,7 +45,7 @@ $(document).ready(function () {
             personalEmail: { required: true, email: true },
             mobileNumber: { required: true, number: true, minlength: 10, maxlength: 10 },
             address: { required: true },
-            password: { required: true },
+            password: { required: true, minlength: 6, maxlength: 16},
         },
         // messages: {
         //     personalName: 'Please fill mandatory fields',

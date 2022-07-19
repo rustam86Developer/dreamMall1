@@ -20,3 +20,14 @@ module.exports.placeBit = async function(req, res) {
         console.log("error",error);
     }
 }
+
+module.exports.login = async function(req, res) {
+    try {
+        console.log("eeeeeeeeeeee",req.body,req.query);
+        let kh = await commonDao.getEmailPass(req.query);
+        console.log("2222222",kh);
+        res.status(200).json({data: kh})
+    } catch (error) {
+        console.log("error",error);
+    }
+}
