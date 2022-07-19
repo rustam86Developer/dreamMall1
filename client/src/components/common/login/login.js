@@ -71,7 +71,7 @@ $(document).ready(function () {
                     $.toast.error('Please try after half an hour');
                 }
             });
-            console.log("klllllllllllllllllll", sdfd);
+            console.log("klllllllllllll", sdfd);
         }
     });
 })
