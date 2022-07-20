@@ -1,7 +1,4 @@
-/**
-    * @author Aasif
-    * @description Render UI for Admin,Partners and Client.We pass topnavbar,sidenavbar,html body and all js file which we include
-    **/
+
  async function renderUI(selector, topNav, sideNav, body, jsArray) {
     await selector.partial($.COMMON_PATH + "layout/layout.html?v=" + $.VERSION)
     $('#sidebar').load($.COMMON_PATH + topNav);
