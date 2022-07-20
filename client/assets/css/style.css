@@ -301,7 +301,7 @@ input::-webkit-input-placeholder {
 }
 
 #main {
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 #tabsJustifiedContent canvas {
@@ -659,7 +659,7 @@ input[disabled] {
 .login-img {
     width: 60%;
     position: absolute;
-    background-image: url('../images/price.png');
+    background-image: url('../images/price4.jpeg');
     background-size: contain;
     height: 100%;
     background-position: left 50%;
@@ -755,7 +755,7 @@ input[disabled] {
     border-bottom: 1px solid #e4e4e4;
     padding: 0.5rem 0.5rem;
     z-index: 1000;
-    min-height: 50px;
+    min-height: 60px;
     position: fixed;
     width: calc(100% - 220px);
 }
@@ -896,7 +896,7 @@ input[disabled] {
 }
 
 .logo-width {
-    width: 114px;
+    width: 104px;
 }
 
 .side-nav-bg {
@@ -946,7 +946,7 @@ input[disabled] {
     min-height: 40px;
     align-items: center;
     padding: 11px 13px 10px 13px;
-    height: 50px;
+    height: 60px;
 }
 
 #sidebar ul.components {
@@ -2119,7 +2119,7 @@ select option:first-child {
 }
 
 .header-padding {
-    padding: 8px 15px;
+    padding: 4px 15px;
 }
 
 .footer-padding {
