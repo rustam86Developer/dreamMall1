@@ -10,23 +10,13 @@ server/uploads
 #dbconnection
 server/dbConnection.js
 server/config/config.json
-client/sw.js
 
 #Package
 server/package-lock.json
-jobs/package-lock.json
-jobs/logs/
-jobs/config/development.config.js
-jobs/config/test.config.js
-jobs/config/stage.config.js
-#temp
-jobs/temporary/*
 
 server/emaillog/*
 server/templates/*
 server/temporary/*  
 server/config/config.json
-server/config/development.config.js
-server/config/test.config.js
 server/node_modules/
 
