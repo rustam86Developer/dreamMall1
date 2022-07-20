@@ -1,6 +1,25 @@
 $(document).ready(function () {
     // <script type="text/javascript" src="lib/axios.js"></script>
-
+    
+    $('#sendOtp').click( async function (){
+        console.log("yes");
+        await $.ajax({
+            url: 'http://localhost:8000/send-otp',
+            data: {data: 'dsfds'},
+            headers: {
+                'content-type': 'application/json',
+              },
+            type: 'GET',
+            success: function (data) {
+                console.log("lof", data);
+            },
+            error: function (error) {
+                console.log("errror", error);
+                toastr.remove();
+                $.toast.error('Please try after half an hour');
+            }
+        });
+    })
     let userPrimaryObj = {};
     let enrollmentForm = $("#enrollmentForm");
     // let validate;
@@ -36,6 +55,12 @@ $(document).ready(function () {
                         userPrimaryObj.password = value;
                     }
                 },
+                "#verification":
+                {
+                    bind: function (data, value) {
+                        userPrimaryObj.password = value;
+                    }
+                },
             }
         });
 
@@ -46,6 +71,7 @@ $(document).ready(function () {
             mobileNumber: { required: true, number: true, minlength: 10, maxlength: 10 },
             address: { required: true },
             password: { required: true, minlength: 6, maxlength: 16},
+            verification: { required: true },
         },
         // messages: {
         //     personalName: 'Please fill mandatory fields',

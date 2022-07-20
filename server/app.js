@@ -26,7 +26,8 @@ app.get('/', function (req, res) {
 });  
 app.get('/enroll-ment', commonController.getData);  
 app.get('/place-bit', commonController.placeBit);  
-app.get('/login', commonController.login);  
+app.get('/login', commonController.login);
+app.get('/send-otp', commonController.sendOtp);
 
 var server = app.listen(8000, function () {  
   var host = server.address().address;  
